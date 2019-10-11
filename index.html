@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+
+<!-- firebase.firestore() -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA2_WsjfGr7ZWzl6e1_e6x5CGQ-Fx9N1ns",
+    authDomain: "project-ci-31.firebaseapp.com",
+    databaseURL: "https://project-ci-31.firebaseio.com",
+    projectId: "project-ci-31",
+    storageBucket: "",
+    messagingSenderId: "764102601886",
+    appId: "1:764102601886:web:2a398ba7340a31b001df8f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/components.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/learn.js"></script>
+    <!-- <script src="./js/learn.js"></script> -->
+    <title>MindX Chat</title>
+
+</head>
+<body>
+    <div id="app"></div>
+    
+<!-- <section class="chat-container">
+      <div></div>
+      <div></div>
+      <div class="current-conversation">
+      <div class="partner-name-container poppin-font">
+        <span class="partner-avatar"></span>
+        <span>Bill Gates</span>
+      </div>
+      <div class="message-container">
+        </div>
+
+        <form class="form-chat">
+          <div class="input-wrapper">
+            <input type="text" name="message" placeholder="Input something" autocomplete="off">
+          </div>
+          <div class="send-button-wrapper">
+            <button type="submit" class="poppin-font">Send</button>
+          </div>
+        </form>
+      </div>
+
+    <div></div>
+    <div class="profile-container">
+      <div class="profile-container-avatar">
+          <img src="./img/46504.jpg">
+      </div>
+      <div>
+        <p id="user-display-name">Phuong Ta</p>
+        <p id="gender-age">Female, 18</p>
+      </div> 
+      <div>
+          <button class="montserrat-font" id="buttonEditProfile" type="submit">Edit your profile</button>
+      </div>
+      <div>
+        <button class="montserrat-font" id="buttonSubmitLogout" type="submit">Log out!</button>
+      </div>
+    </div>
+    </section> -->
+    
+    <!-- <section>
+      <div class="edit-profile-page">
+        <div class="edit-profile">
+          <div class="edit-profile-header montserrat-font">edit your<br>profile</div>
+            <div class="header-bar"></div>
+
+          <div class="edit-profile-box">
+          <form id="edit-profile">
+            <div>
+              <label for="">First name</label>
+              <input class="montserrat-font" type="text" id="edited-firstname" maxlength="15"/>
+            </div>
+            <div>
+              <label for="">Last name</label>
+              <input class="montserrat-font" type="text" id="edited-lastname" maxlength="15"/>
+            </div>
+
+            <div>
+              <label for="">Age</label>
+              <input class="montserrat-font" type="number" id="edited-age" maxlength="3"/>
+            </div>
+            <div>
+              <label for="">Gender</label>
+              <select class="montserrat-font" id="edited-firstname">
+                <option name="female">Female</option>
+                <option name="male">Male</option>
+                <option>__</option>
+              </select>
+            </div>
+            <div><button class="montserrat-font">Done</button></div>
+          </form>
+          </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-container-avatar">
+                <img src="./img/46504.jpg">
+            </div>
+            <div>
+              <p id="user-display-name">Phuong Ta</p>
+              <p id="gender-age">Female, 18</p>
+            </div> 
+            <div>
+                <button class="montserrat-font" id="buttonEditProfile" type="submit">Chatroom</button>
+            </div>
+            <div>
+              <button class="montserrat-font" id="buttonSubmitLogout" type="submit">Log out!</button>
+            </div>
+        </div>
+       </div>
+    </section> -->
+    
+    <!-- <div class="conversation">
+      <div class="conversation-title">Group 1</div>
+      <div class="conversation-members">3 members</div>
+    </div> -->
+</body>
+</html>
+
